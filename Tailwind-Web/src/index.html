@@ -7,7 +7,7 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-green-300">
     <!-- <h1 class="bg-amber-600 flex justify-center items-center h-screen font-bold">Hello World</h1>
     <div class="h-screen flex justify-center items-center">
         <table class="border border-2 border-black border-collapse">
@@ -31,17 +31,33 @@
         
 
     </div> -->
-    <form class="flex justify-center items-center h-screen w-full">
-        <div class="bg-red-500">
-            <h2>Register</h2>
-            <input type="number" placeholder="Enter your ID">
-            <input type="text" placeholder="Enter your Full Name">
-            <input type="email" placeholder="Enter your Email">
-            <input type="password" placeholder="Enter your Password">
-            <button>Register Now</button>
-            <p>Already have an account? <a>Login now</a></p>
+    <form class="flex items-center justify-center h-screen w-full">
+        <div class=" bg-white p-6 rounded-lg w-80 text-center">
+            <h2 class="text-2xl font-bold mb-4 text-black text-left">Register</h2>
+
+            <input type="text" placeholder="Enter your ID"
+                class=" border-1 border-green-400 w-full mb-3 p-2 rounded-xl">
+
+            <input type="text" placeholder="Enter your Full Name"
+                class="border-1 border-green-400 w-full mb-3 p-2 rounded-xl">
+
+            <input type="email" placeholder="Enter your Email"
+                class="border-1 border-green-400 w-full mb-3 p-2 rounded-xl">
+
+            <input type="password" placeholder="Enter your Password"
+                class="border-1 border-green-400 w-full mb-3 p-2 rounded-xl">
+
+            <button class="w-full bg-black text-white py-2 rounded-xl hover:bg-gray-800">
+                Register Now
+            </button>
+
+            <p class="mt-3 text-black ">
+                Already have an account?
+                <a href="login.html" class="none text-green-700 font-semibold">Login now</a>
+            </p>
         </div>
     </form>
+
 </body>
 
 </html>
