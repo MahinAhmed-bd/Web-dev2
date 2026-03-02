@@ -93,3 +93,32 @@ for (i=1; i<=100; i++){
         console.log(i);
     }
 }
+
+// Q10 : Stop at First multiple of 7
+// Write a loop from each number
+// Stops completely when it finds the first number divisible by 7
+
+for (i=1; i<=50; i++){
+    console.log(i);
+    if (i%7===0){
+        break;
+    }
+}
+
+//  Q11: skip Multiple of 3
+//  Write a loop from 1 to 20 that :
+// . Skips numbers divisible by 3
+// . Prints all others
+//  📌Use continue
+
+// Expected outputs :
+// 1 2 4 5 7 8 10 11 ... (no 3,6,9,etc.)
+
+for (let i=1; i<=100; i++){
+    if(i%2!==0){
+        console.log(i);
+    }
+    else if(i===10){
+      break;  
+    } 
+}
