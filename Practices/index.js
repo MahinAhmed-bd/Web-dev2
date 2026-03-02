@@ -39,72 +39,33 @@
 //   console.log(i);
 // } while (i < 6);
 
+// Q10 : Stop at First multiple of 7
+// Write a loop from each number
+// Stops completely when it finds the first number divisible by 7
 
-// Question number one
-
-// for (i=1; i<11;i++){
-//     console.log(i)
-// }
-
-// Question number two
-
-// let i=10;
-// while(i>=1){
-//     console.log(i);
-//     i--;
-// }
-
-// Question number three
-// for(i=1; i<=20; i++ ){
-//     if(i%2==0){
-//         console.log(i)
-//     }
-    
-// }
-
-// Question number four
-// let i=1;
-// while(i<=15){
-//     if(i%2!==0){
-//     console.log("Odd numbers are:"+i);
-//     }
-//     i++;
-// }
-
-// Question number five
-// for (i=1; i<=10; i++){
-//     console.log(`5 * ${i}= ` +5*i);
-// }
-
-// Question number six
-// let sum=0;
-// for (i=1; i<=100; i++){
-//     sum +=i;
-// }
-// console.log(sum);
-
-// Question number seven
-// for(let i=1; i<=50; i++){
-//     if (i%3===0){
-//         console.log(i)
-//     }
-// }
-
-// Question number eight
-// const prompt=require("prompt-sync")();
-// let n= Number(prompt(`Enter the value of n :`));
-// for(i=1; i<=n; i++){
-//     if (i%2===0){
-//         console.log(i+ `is even number`);
-//     }
-//     else{
-//         console.log(i+ `is odd number`);
-//     }
-// }
-
-// Question number nine
-for (i=1; i<=100; i++){
-    if(i%3==0 && i%5==0){
-        console.log(i);
+for (i=1; i<=50; i++){
+    console.log(i);
+    if (i%7===0){
+        break;
     }
 }
+
+//  Q11: skip Multiple of 3
+//  Write a loop from 1 to 20 that :
+// . Skips numbers divisible by 3
+// . Prints all others
+//  📌Use continue
+
+// Expected outputs :
+// 1 2 4 5 7 8 10 11 ... (no 3,6,9,etc.)
+
+for (let i=1; i<=100; i++){
+    if(i%2!==0){
+        console.log(i);
+    }
+    else if(i===10){
+      break;  
+    } 
+}
+
+

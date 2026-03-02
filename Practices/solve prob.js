@@ -22,7 +22,7 @@ for(i=1; i<=20; i++ ){
         console.log(i)
     }
     
-// }
+}
 
 // Question number 4--
 // Print odd numbers from  1 to 20 using a while loop
@@ -93,6 +93,7 @@ for (i=1; i<=100; i++){
         console.log(i);
     }
 }
+<<<<<<< HEAD
 
 // Q10 : Stop at First multiple of 7
 // Write a loop from each number
@@ -122,3 +123,5 @@ for (let i=1; i<=100; i++){
       break;  
     } 
 }
+=======
+>>>>>>> a02efe3041112824671f3e7a6447bffbac78e412
