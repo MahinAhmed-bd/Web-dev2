@@ -22,7 +22,7 @@ for(i=1; i<=20; i++ ){
         console.log(i)
     }
     
-// }
+}
 
 // Question number 4--
 // Print odd numbers from  1 to 20 using a while loop
