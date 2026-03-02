@@ -63,10 +63,48 @@
 // }
 
 // Question number four
-let i=1;
-while(i<=15){
-    if(i%2!==0){
-    console.log("Odd numbers are:"+i);
+// let i=1;
+// while(i<=15){
+//     if(i%2!==0){
+//     console.log("Odd numbers are:"+i);
+//     }
+//     i++;
+// }
+
+// Question number five
+// for (i=1; i<=10; i++){
+//     console.log(`5 * ${i}= ` +5*i);
+// }
+
+// Question number six
+// let sum=0;
+// for (i=1; i<=100; i++){
+//     sum +=i;
+// }
+// console.log(sum);
+
+// Question number seven
+// for(let i=1; i<=50; i++){
+//     if (i%3===0){
+//         console.log(i)
+//     }
+// }
+
+// Question number eight
+// const prompt=require("prompt-sync")();
+// let n= Number(prompt(`Enter the value of n :`));
+// for(i=1; i<=n; i++){
+//     if (i%2===0){
+//         console.log(i+ `is even number`);
+//     }
+//     else{
+//         console.log(i+ `is odd number`);
+//     }
+// }
+
+// Question number nine
+for (i=1; i<=100; i++){
+    if(i%3==0 && i%5==0){
+        console.log(i);
     }
-    i++;
 }
