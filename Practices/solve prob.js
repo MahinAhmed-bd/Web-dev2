@@ -27,7 +27,7 @@ for(i=1; i<=20; i++ ){
 // Question number 4--
 // Print odd numbers from  1 to 20 using a while loop
 
-let i=1;
+// let i=1;
 while(i<=15){
     if(i%2!==0){
     console.log("Odd numbers are:"+i);
@@ -46,14 +46,14 @@ for (i=1; i<=10; i++){
 //  Find the sum of numbers from 1 to 100 using two loops
 // Number One--
 
-let sum=0;
+// let sum=0;
 for (i=1; i<=100; i++){
     sum +=i;
 }
 console.log(sum);
 
 // Number Two--
-let i=1;
+// let i=1;
 let sum = 0;
 while(i<=100){
     sum+=i;
@@ -176,3 +176,25 @@ function discountCalculator(discount){
 let tenp=discountCalculator(10);
 let twnp=discountCalculator(20);
 console.log(twnp(200));
+
+       // Solving Arrays Question---
+
+ let arr=[2,4,6,10,15];
+ console.log(arr[0]);
+
+// forEach Array
+arr.forEach(function(val){
+    console.log(val);
+});
+
+// map method in array.
+let array=arr.map(function(val){
+    return 121;
+});
+console.log(array);
+
+// using reduce method in array
+let value=arr.reduce((acc,val)=>{
+    return acc+val;
+},0)
+console.log(value);
