@@ -93,7 +93,7 @@ for (i=1; i<=100; i++){
         console.log(i);
     }
 }
-<<<<<<< HEAD
+
 
 // Q10 : Stop at First multiple of 7
 // Write a loop from each number
@@ -123,5 +123,56 @@ for (let i=1; i<=100; i++){
       break;  
     } 
 }
-=======
->>>>>>> a02efe3041112824671f3e7a6447bffbac78e412
+
+
+// Practice Zone
+
+console.log(null + 1);
+console.log("5" + 3);
+console.log("5" - 3);
+console.log(true + false);
+
+
+// First class function
+function abcd(val){
+    val();
+}
+abcd(function(){
+    console.log("Hey iam cooked!! or burned.")
+})
+
+// Closure Function  
+
+function outer(){
+    let count=0;
+    return function(){
+        count ++;
+        console.log(count);
+    }
+}
+const abcd = outer();
+abcd();
+abcd();
+
+// IIFE 
+(function init(){
+    for(let i=1; i<=50; i++){
+        console.log(i);
+    }
+})();
+
+// Write a BMI Calculator
+function BMI(weight,height){
+    return weight/(height**2)
+}
+console.log(BMI(54,1.7).toFixed(2));
+
+// Discount Calculator 
+function discountCalculator(discount){
+    return function(price){
+        return price-price*(discount/100);
+    };
+}
+let tenp=discountCalculator(10);
+let twnp=discountCalculator(20);
+console.log(twnp(200));
