@@ -198,3 +198,39 @@ let value=arr.reduce((acc,val)=>{
     return acc+val;
 },0)
 console.log(value);
+
+// using filter method in arrays.
+let a=arr.filter(function(val){
+    if(val>5){
+        return true;
+    };
+});
+console.log(a);
+
+// using find method in arrays.
+let arry=[2,4,6,10,15];
+let b=arry.find(function(val){
+    if(val===11){
+        return val;
+    };
+});
+console.log(b); //Undefined 
+
+
+// some and every method in arrays.
+let arrays=[2,4,5,6,10,15];
+
+let c=arrays.some((val)=>{
+    if(val<=5){
+        return val;
+    };
+});
+console.log(c);
+
+// every method
+let d=arrays.every((val)=>{
+    if(val>5){
+        return val;
+    };
+});
+console.log(d);
