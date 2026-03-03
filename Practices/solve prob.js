@@ -234,3 +234,59 @@ let d=arrays.every((val)=>{
     };
 });
 console.log(d);
+
+//      Operation of objects--->
+
+let obj={
+    name : "Mahin Ahmed",
+    session: 23_24,
+    Roll: 2385_342,
+    Dept: "CST",
+};
+console.log(obj.name);
+
+// Nested Destructuring objects
+let obj2={
+    name : "Mahin Ahmed",
+    session: 23_24,
+    Roll: 2385_342,
+    Dept: {
+    dept1:"CST",
+    dept2:"CT",
+    },
+    study:{
+        tec1: "Diploma",
+        tec3: "HSC",
+    },
+
+};
+let {dept1,dept2}=obj2.Dept;
+let{tec1}=obj2.study
+console.log(dept1,dept2,tec1);
+
+// solving question in use of for in loop at Objects---
+let objs={
+    name :"mahin ahmed",
+    age : `19 years old`,
+    email : `mahinahmed.tech@gmail.com`,
+}
+for ( let key in objs){
+    console.log(key,`:` +objs[key]);
+}
+
+// Deep cloning objects
+let obj3={
+    name :"Meherab ahmed",
+    age : `9 years old`,
+    class : 4,
+    address:{
+        district : "Rajshahi",
+    },
+};
+
+let obj4=JSON.parse(JSON.stringify(obj3));
+
+
+obj4.address.district="Rangpur";
+console.log(obj4);
+console.log(obj3);
