@@ -39,33 +39,138 @@
 //   console.log(i);
 // } while (i < 6);
 
-// Q10 : Stop at First multiple of 7
-// Write a loop from each number
-// Stops completely when it finds the first number divisible by 7
 
-for (i=1; i<=50; i++){
-    console.log(i);
-    if (i%7===0){
-        break;
-    }
-}
+        // Arrays---
 
-//  Q11: skip Multiple of 3
-//  Write a loop from 1 to 20 that :
-// . Skips numbers divisible by 3
-// . Prints all others
-//  📌Use continue
+ let arr=[2,4,5,6,10,15];
+//  console.log(arr[0]);
 
-// Expected outputs :
-// 1 2 4 5 7 8 10 11 ... (no 3,6,9,etc.)
+// // forEach Array
+// arr.forEach(function(val){
+//     console.log(val);
+// });
 
-for (let i=1; i<=100; i++){
-    if(i%2!==0){
-        console.log(i);
-    }
-    else if(i===10){
-      break;  
-    } 
-}
+// // map method in arrays.
+// let array=arr.map(function(val){
+//     return 121;
+// });
+// console.log(array);
+
+// using reduce method in arrays.
+// let value=arr.reduce((acc,val)=>{
+//     return acc+val;
+// },0)
+// console.log(value);
+
+// using filter method in arrays.
+// let a=arr.filter(function(val){
+//     if(val>5){
+//         return true;
+//     };
+// });
+// console.log(a);
+
+// filter method.
+// let b=arr.find(function(val){
+//     if(val===11){
+//         return val;
+//     };
+// });
+// console.log(b);
+
+// let array=[2,4,5,6,10,15];
+
+// let c=array.some((val)=>{
+//     if(val<=5){
+//         return val;
+//     };
+// });
+// console.log(c);
+// let d=array.every((val)=>{
+//     if(val>5){
+//         return val;
+//     };
+// });
+// console.log(d);
+
+
+// let obj={
+//     name : "Mahin Ahmed",
+//     session: 23_24,
+//     Roll: 2385_342,
+//     Dept: {
+//     dept1:"CST",
+//     dept2:"CT",
+//     },
+//     study:{
+//         tec1: "Diploma",
+//         tec3: "HSC",
+//     },
+
+// };
+// let {dept1,dept2}=obj.Dept;
+// let{tec1}=obj.study
+// console.log(dept1,dept2,tec1);
+
+// Destructuring objects.
+// let obj3={
+//     name :"Meherab ahmed",
+//     age : `9 years old`,
+//     email : `meherab***36@email.com`,
+// }
+// for ( let key in obj3){
+//     console.log(key,`:` +obj3[key]);
+// }
+
+// Deep copy---->
+// let obj3={
+//     name :"Meherab ahmed",
+//     age : `9 years old`,
+//     email : `meherab***36@email.com`,
+//     address:{
+//         district : "Rajshahi",
+//     },
+// };
+
+// let obj4=JSON.parse(JSON.stringify(obj3));
+
+
+// obj4.address.district="Rangpur";
+// console.log(obj4);
+// console.log(obj3);
+
+// let p=document.createElement("p");
+// p.textContent="Here it's a paragraph"
+// document.body.append(p);
+
+// let h1=document.createElement("h1");
+// h1.textContent="Iam from js";
+// document.querySelector("div").prepend(h1);
+
+// let image=document.querySelector("img");
+// image.alt="https://newindianmodels.com/wp-content/uploads/2020/09/Lean-your-shoulder-best-poses-for-female-model.jpg";
+
+let evnt=document.querySelector("h1");
+evnt.addEventListener("click",function(){
+        evnt.style.color="red";
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
