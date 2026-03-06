@@ -154,6 +154,25 @@ let evnt=document.querySelector("h1");
 evnt.addEventListener("click",function(){
         evnt.style.color="red";
 })
+let evnt2=document.querySelector("img");
+evnt2.addEventListener("click", () =>{
+        
+        evnt2.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOpGbs4Rs5sBt6niREaZuivtjTczY8eVuqew&s";
+});
+evnt2.addEventListener("dblclick", () =>{
+        
+        evnt2.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX50KUO0Pu0_ViB3TerHiUMlxufrPB4lz0Dw&s";
+});
+
+let inp=document.querySelector("input").addEventListener("input", (val) => {
+        if(val.data !==null){
+                console.log(val.data);
+        }
+});
+let slct=document.querySelector("select").addEventListener("change",(details) =>{
+        evnt.textContent=`${details.target.value} is selected`;
+        console.log(details.target.value);
+})
 
 
 
