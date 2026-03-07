@@ -51,3 +51,48 @@ let d=array.every((val)=>{
     };
 });
 console.log(d);
+
+//          Learn Objects--
+let obj={
+    name : "Mahin Ahmed",
+    session: 23_24,
+    Roll: 2385_342,
+    Dept: {
+    dept1:"CST",
+    dept2:"CT",
+    },
+    study:{
+        tec1: "Diploma",
+        tec3: "HSC",
+    },
+};
+let {dept1,dept2}=obj.Dept;
+let{tec1}=obj.study
+console.log(dept1,dept2,tec1);
+
+// Destructuring objects.
+let obj3={
+    name :"Meherab ahmed",
+    age : `9 years old`,
+    email : `meherab***36@email.com`,
+}
+for ( let key in obj3){
+    console.log(key,`:` +obj3[key]);
+}
+
+// Deep copy---->
+let objs={
+    name :"Meherab ahmed",
+    age : `9 years old`,
+    email : `meherab***36@email.com`,
+    address:{
+        district : "Rajshahi",
+    },
+};
+
+let obj4=JSON.parse(JSON.stringify(objs));
+
+
+obj4.address.district="Rangpur";
+console.log(obj4);
+console.log(objs);
