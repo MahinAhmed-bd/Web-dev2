@@ -40,104 +40,9 @@
 // } while (i < 6);
 
 
-        // Arrays---
-
- let arr=[2,4,5,6,10,15];
-//  console.log(arr[0]);
-
-// // forEach Array
-// arr.forEach(function(val){
-//     console.log(val);
-// });
-
-// // map method in arrays.
-// let array=arr.map(function(val){
-//     return 121;
-// });
-// console.log(array);
-
-// using reduce method in arrays.
-// let value=arr.reduce((acc,val)=>{
-//     return acc+val;
-// },0)
-// console.log(value);
-
-// using filter method in arrays.
-// let a=arr.filter(function(val){
-//     if(val>5){
-//         return true;
-//     };
-// });
-// console.log(a);
-
-// filter method.
-// let b=arr.find(function(val){
-//     if(val===11){
-//         return val;
-//     };
-// });
-// console.log(b);
-
-// let array=[2,4,5,6,10,15];
-
-// let c=array.some((val)=>{
-//     if(val<=5){
-//         return val;
-//     };
-// });
-// console.log(c);
-// let d=array.every((val)=>{
-//     if(val>5){
-//         return val;
-//     };
-// });
-// console.log(d);
 
 
-// let obj={
-//     name : "Mahin Ahmed",
-//     session: 23_24,
-//     Roll: 2385_342,
-//     Dept: {
-//     dept1:"CST",
-//     dept2:"CT",
-//     },
-//     study:{
-//         tec1: "Diploma",
-//         tec3: "HSC",
-//     },
 
-// };
-// let {dept1,dept2}=obj.Dept;
-// let{tec1}=obj.study
-// console.log(dept1,dept2,tec1);
-
-// Destructuring objects.
-// let obj3={
-//     name :"Meherab ahmed",
-//     age : `9 years old`,
-//     email : `meherab***36@email.com`,
-// }
-// for ( let key in obj3){
-//     console.log(key,`:` +obj3[key]);
-// }
-
-// Deep copy---->
-// let obj3={
-//     name :"Meherab ahmed",
-//     age : `9 years old`,
-//     email : `meherab***36@email.com`,
-//     address:{
-//         district : "Rajshahi",
-//     },
-// };
-
-// let obj4=JSON.parse(JSON.stringify(obj3));
-
-
-// obj4.address.district="Rangpur";
-// console.log(obj4);
-// console.log(obj3);
 
 // let p=document.createElement("p");
 // p.textContent="Here it's a paragraph"
@@ -184,9 +89,58 @@
 //         }
 // });
 
+// let btn=document.querySelector("#btn");
+// let inp=document.querySelector("#input");
+// btn.addEventListener("click", () =>{
+//         inp.click();
+// });
+// inp.addEventListener("change", (detls) =>{
+//         const file=detls.target.files[0];
+//         if(file){
+//                 btn.textContent=file.name;
+//         }
+//         else{
+//                 btn.textContent="select first";
+//         }
+// });
 
+let form=document.querySelector("form");
+let input=document.querySelectorAll("input");
+let main=document.querySelector("#main");
+form.addEventListener("submit", (dtl) =>{
+    dtl.preventDefault();
 
+    let card=document.createElement("div");
+    card.classList.add("card");
 
+    let profile=document.createElement("div");
+    profile.classList.add("profile");
+
+    let images=document.createElement("img");
+    images.setAttribute("src" ,input[0].value);
+
+    let h3=document.createElement("h3")
+    h3.textContent=input[1].value;
+    let h5=document.createElement("h5")
+    h5.textContent=input[2].value;
+    let p=document.createElement("p")
+    p.textContent=input[3].value;
+
+    
+    profile.appendChild(images);
+    card.appendChild(profile);
+    card.appendChild(h3);
+    card.appendChild(h5);
+    card.appendChild(p);
+    main.appendChild(card);
+
+    input.forEach((vals)=>{
+        if(vals.type!=="submit"){
+
+            vals.value="";
+        }
+    });
+});
 
 
 
