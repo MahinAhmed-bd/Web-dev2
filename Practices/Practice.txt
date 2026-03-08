@@ -1,4 +1,4 @@
-// HTML For Validation in using of addEventListener;
+// 01 HTML For Validation in using of addEventListener;
 
 <form action="">
             <input type="text" placeholder="Profile link">
@@ -99,4 +99,24 @@ form.addEventListener("submit", (dtl) =>{
 
 
 
+// 02 target mousemove in using of js
 
+
+<img class="mousemove" src="images/download.png" alt="Ben10">
+
+//CSS
+
+.mousemove{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+// javascript
+
+const move=document.querySelector(".mousemove");
+window.addEventListener("mousemove", (details) =>{
+    move.style.left=details.clientX + "px";
+    move.style.top=details.clientY + "px";
+});
