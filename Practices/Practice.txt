@@ -120,3 +120,47 @@ window.addEventListener("mousemove", (details) =>{
     move.style.left=details.clientX + "px";
     move.style.top=details.clientY + "px";
 });
+
+
+
+// 03 Live Character Counter
+<div> 
+    <input class="input" type="text" placeholder="Enter your complements">
+    <h1>Total Character :<span> 0</span></h1>
+</div>
+
+/* CSS */
+
+input{
+        display: block;
+        margin: 10px 0 10px 0;
+        color: #fff;
+        background-color: rgba(132, 155, 140, 0.63);
+        height: 50px;
+        width: 250px;
+        border-radius: 10px;
+        border: none;
+     }
+     input::placeholder{
+        color: #fff;
+        padding: 0 5px;
+        
+     }
+     #main h1{
+        color: whitesmoke;
+     }
+
+     // javascript
+
+const inp=document.querySelector(".input");
+const spn=document.querySelector("span");
+inp.addEventListener("input", () =>{
+    let left=20-inp.value.length;
+    spn.textContent=left;
+    if(left<0){
+        spn.style.color="red";
+    }
+    else{
+        spn.style.color="whitesmoke";
+    }
+});
