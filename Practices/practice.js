@@ -96,3 +96,6 @@ let obj4=JSON.parse(JSON.stringify(objs));
 obj4.address.district="Rangpur";
 console.log(obj4);
 console.log(objs);
+
+
+

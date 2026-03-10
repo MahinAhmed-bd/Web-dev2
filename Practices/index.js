@@ -104,43 +104,44 @@
 //         }
 // });
 
-let form=document.querySelector("form");
-let input=document.querySelectorAll("input");
-let main=document.querySelector("#main");
-form.addEventListener("submit", (dtl) =>{
-    dtl.preventDefault();
+// let form=document.querySelector("form");
+// let input=document.querySelectorAll("input");
+// let main=document.querySelector("#main");
+// form.addEventListener("submit", (dtl) =>{
+//     dtl.preventDefault();
 
-    let card=document.createElement("div");
-    card.classList.add("card");
+//     let card=document.createElement("div");
+//     card.classList.add("card");
 
-    let profile=document.createElement("div");
-    profile.classList.add("profile");
+//     let profile=document.createElement("div");
+//     profile.classList.add("profile");
 
-    let images=document.createElement("img");
-    images.setAttribute("src" ,input[0].value);
+//     let images=document.createElement("img");
+//     images.setAttribute("src" ,input[0].value);
 
-    let h3=document.createElement("h3")
-    h3.textContent=input[1].value;
-    let h5=document.createElement("h5")
-    h5.textContent=input[2].value;
-    let p=document.createElement("p")
-    p.textContent=input[3].value;
+//     let h3=document.createElement("h3")
+//     h3.textContent=input[1].value;
+//     let h5=document.createElement("h5")
+//     h5.textContent=input[2].value;
+//     let p=document.createElement("p")
+//     p.textContent=input[3].value;
 
     
-    profile.appendChild(images);
-    card.appendChild(profile);
-    card.appendChild(h3);
-    card.appendChild(h5);
-    card.appendChild(p);
-    main.appendChild(card);
+//     profile.appendChild(images);
+//     card.appendChild(profile);
+//     card.appendChild(h3);
+//     card.appendChild(h5);
+//     card.appendChild(p);
+//     main.appendChild(card);
 
-    input.forEach((vals)=>{
-        if(vals.type!=="submit"){
+//     input.forEach((vals)=>{
+//         if(vals.type!=="submit"){
 
-            vals.value="";
-        }
-    });
-});
+//             vals.value="";
+//         }
+//     });
+// });
+
 
 
 
