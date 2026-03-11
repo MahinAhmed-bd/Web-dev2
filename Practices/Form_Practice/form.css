@@ -10,7 +10,7 @@ body {
   color: #e5e7eb;
 }
 
-#login {
+form {
   height: 380px;
   width: 340px;
   background: rgba(255, 255, 255, 0.08);
@@ -20,7 +20,49 @@ body {
   text-align: center;
 }
 
+form h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  border-radius: 5px;
+  height: 30px;
+  width: 260px;
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e5e7eb;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 10px;
+}
+
+input::placeholder {
+  color: #9b93c9;
+}
+
+#submit {
+  background: rgba(110, 24, 24, 0.25);
+  border: none;
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+a {
+  color: #480dd3;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 #p1 {
   margin-top: 60px;
+}
+#emailError,#passwordError{
+    display: none;
 }
