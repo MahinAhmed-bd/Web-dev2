@@ -143,16 +143,19 @@
 // });
 
 
-const inp = document.querySelector("input");
-inp.addEventListener("input", (dets) =>{
-    if (dets.data !== null){
+// const inp = document.querySelector("input");
+// inp.addEventListener("input", (dets) =>{
+//     if (dets.data !== null){
         
-        console.log(dets.data);
-    }
+//         console.log(dets.data);
+//     }
     
+// });
+let h1= document.querySelector("h1");
+let sel = document.querySelector("select");
+sel.addEventListener("change" , (dets) =>{
+    h1.textContent=( `${dets.target.value} is Seleted`);
 });
-
-
 
 
 
